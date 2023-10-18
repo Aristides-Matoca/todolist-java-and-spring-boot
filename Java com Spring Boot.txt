@@ -60,3 +60,11 @@ rodar aplicacao pelo terminar
 render.com para usar o runtime docker e conectei com o github
 
 Ctrl + ? - Abrir o BlackBox AI
+
+criar um repositorio no github e clonar na maquina local
+git config --global user.email "harry.matoca@gmail.com"
+git config --global user.password yourpassoword
+git add . adiciona tudo
+git commit -m "comita tudo"
+git push main origin manda o comite
+git pull origin traz o comit
