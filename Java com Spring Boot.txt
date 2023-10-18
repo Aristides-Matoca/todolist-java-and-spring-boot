@@ -1,0 +1,62 @@
+Java com Spring Boot
+
+Aula 1
+Instalar o java, maven e outras extensoes do java no VSCode
+
+Site start.spring.io
+
+project maven
+language java
+Spring boot v 3.0.11
+Project metadata
+Jar
+version 17
+
+Generate
+
+descompactar e abrir no vscode
+
+dentro da pasta todolist criar uma pasta controller
+e dentro criar um file MinhaPrimeiraController.java
+
+{
+@ResController
+public class MPC{
+
+}
+}
+
+Eliminar a pasta controller
+criar a pasta user
+file userController.java
+userModel.java
+name
+username
+password
+
+Dentro a APIDog
+selecionar new request
+selecionar Post
+http://localhost:8080/users/
+body
+json
+{
+"variavel1": "valor1",
+"variavel2": "valor2"
+}
+
+a base de dados e configurada no ficheiro application.properties que está dentro da pasta resources
+
+API Dog
+H2 DataBase
+Spring data jpa
+
+http://localhost:8080/h2-console/ - Acessar a parte grafica da BD
+
+rodar aplicacao pelo terminar
+1 - mvn spring-boot:run
+2 - Java Project > clicar no debug e executar no modo de debug
+
+render.com para usar o runtime docker e conectei com o github
+
+Ctrl + ? - Abrir o BlackBox AI
