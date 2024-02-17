@@ -10,11 +10,11 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import ao.com.aristides.todolist.user.IUserRepository;
 import ao.com.aristides.todolist.user.UserModel;
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import jakarta.servlet.Filter;
+//import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
+//import jakarta.servlet.ServletRequest;
+//import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 

@@ -17,6 +17,7 @@ public class UserController {
     @Autowired
     private IUserRepository userRepository;
 
+    @SuppressWarnings("rawtypes")
     @PostMapping("/")//Metódo responsávem em criar users
     public ResponseEntity create(@RequestBody UserModel userModel){
         UserModel user = this.userRepository.findByUsername(userModel.getUsername()); //Verifica se o username da existe

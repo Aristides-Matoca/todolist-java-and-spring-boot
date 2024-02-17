@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
-import org.apache.catalina.connector.Response;
+//import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +26,7 @@ public class TaskController {
     @Autowired
     private ITaskRepository taskRepository;
 
+    @SuppressWarnings("rawtypes")
     @PostMapping("/")//Metódo responsávem em criar Tarefas
     public ResponseEntity create(@RequestBody TaskModel taskModel, HttpServletRequest request){
         System.out.println("Chegou no controller");
@@ -52,6 +53,7 @@ public class TaskController {
         return tasks;
     }
 
+    @SuppressWarnings("rawtypes")
     @PutMapping("/{id}")//Função responsável em fazer a atualização da tarefa
     public ResponseEntity update(@RequestBody TaskModel taskModel, HttpServletRequest request, @PathVariable UUID id){
         TaskModel task = this.taskRepository.findById(id).orElse(null);
